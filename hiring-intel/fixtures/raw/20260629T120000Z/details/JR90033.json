@@ -1,0 +1,25 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/DE--Munich/AI-Frameworks-Engineer--NeMo-Training_JR90033",
+ "captured_at": "2026-06-29T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90033",
+   "title": "AI Frameworks Engineer, NeMo Training",
+   "jobDescription": "<p>NVIDIA is looking for a AI Frameworks Engineer, NeMo Training on the Software Engineering team. You will work on distributed training, Megatron, mixture of experts, PyTorch.</p><p>3+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "DE, Munich",
+   "additionalLocations": [],
+   "postedOn": "2026-06-20-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90033",
+   "jobPostingId": "post-jr90033",
+   "country": {
+    "descriptor": "DE"
+   },
+   "jobFamilyGroup": "Software Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

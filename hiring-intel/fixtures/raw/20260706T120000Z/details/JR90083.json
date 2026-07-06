@@ -1,0 +1,25 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/US--CA--Santa-Clara/Sales-Operations-Analyst_JR90083",
+ "captured_at": "2026-07-06T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90083",
+   "title": "Sales Operations Analyst",
+   "jobDescription": "<p>NVIDIA is looking for a Sales Operations Analyst on the Sales team. You will work on pipeline analytics, Salesforce, forecasting.</p><p>3+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "US, CA, Santa Clara",
+   "additionalLocations": [],
+   "postedOn": "2026-06-27-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90083",
+   "jobPostingId": "post-jr90083",
+   "country": {
+    "descriptor": "US"
+   },
+   "jobFamilyGroup": "Sales"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

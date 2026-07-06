@@ -1,0 +1,45 @@
+req_id,location,is_primary
+JR90001,"US, CA, Santa Clara",1
+JR90002,"US, TX, Austin",1
+JR90002,"US, CA, Santa Clara",0
+JR90003,"IN, Bangalore",1
+JR90004,"TW, Taipei",1
+JR90011,"US, CA, Santa Clara",1
+JR90012,"IL, Yokneam",1
+JR90012,"IL, Tel Aviv",0
+JR90013,"US, CA, Santa Clara",1
+JR90014,"IL, Tel Aviv",1
+JR90021,"US, Remote",1
+JR90021,"PL, Warsaw",0
+JR90022,"JP, Tokyo",1
+JR90031,"US, CA, Santa Clara",1
+JR90031,"US, Remote",0
+JR90032,"US, Remote",1
+JR90033,"DE, Munich",1
+JR90034,"US, CA, Santa Clara",1
+JR90034,"CA, Toronto",0
+JR90041,"US, CA, Santa Clara",1
+JR90041,"DE, Berlin",0
+JR90042,"CN, Shanghai",1
+JR90051,"US, CA, Santa Clara",1
+JR90052,"IN, Pune",1
+JR90061,"US, NC, Durham",1
+JR90062,"PL, Warsaw",1
+JR90071,"DE, Munich",1
+JR90081,"US, MA, Boston",1
+JR90082,"SG, Singapore",1
+JR90083,"US, CA, Santa Clara",1
+JR90091,"TW, Taipei",1
+JR90091,"US, CA, Santa Clara",0
+JR90092,"TW, Hsinchu",1
+JR90101,"US, CA, Santa Clara",1
+JR90102,"US, DC, Washington",1
+JR90103,"IN, Bangalore",1
+JR90104,"US, TX, Austin",1
+JR90111,"IN, Pune",1
+JR90112,"US, Remote",1
+JR90122,"US, CA, Santa Clara",1
+JR90122,"US, Remote",0
+JR90123,"US, CA, Santa Clara",1
+JR90131,"US, CA, Santa Clara",1
+JR90132,"TW, Taipei",1

@@ -1,0 +1,25 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/US--Remote/CUDA-Kernel-Engineer--Attention-Optimization_JR90032",
+ "captured_at": "2026-06-29T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90032",
+   "title": "CUDA Kernel Engineer, Attention Optimization",
+   "jobDescription": "<p>NVIDIA is looking for a CUDA Kernel Engineer, Attention Optimization on the Software Engineering team. You will work on CUDA C++, kernel fusion, FlashAttention, Blackwell tensor cores.</p><p>3+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "US, Remote",
+   "additionalLocations": [],
+   "postedOn": "2026-06-20-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90032",
+   "jobPostingId": "post-jr90032",
+   "country": {
+    "descriptor": "US"
+   },
+   "jobFamilyGroup": "Software Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

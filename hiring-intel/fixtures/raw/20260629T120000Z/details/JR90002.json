@@ -1,0 +1,27 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/US--TX--Austin/Principal-Physical-Design-Engineer_JR90002",
+ "captured_at": "2026-06-29T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90002",
+   "title": "Principal Physical Design Engineer",
+   "jobDescription": "<p>NVIDIA is looking for a Principal Physical Design Engineer on the Hardware Engineering team. You will work on floorplanning, place and route, advanced process nodes, tapeout.</p><p>12+ years; recognized technical leader.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "US, TX, Austin",
+   "additionalLocations": [
+    "US, CA, Santa Clara"
+   ],
+   "postedOn": "2026-06-20-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90002",
+   "jobPostingId": "post-jr90002",
+   "country": {
+    "descriptor": "US"
+   },
+   "jobFamilyGroup": "Hardware Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

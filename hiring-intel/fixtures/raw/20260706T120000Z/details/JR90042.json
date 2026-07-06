@@ -1,0 +1,25 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/CN--Shanghai/System-Software-Engineer--DRIVE-OS_JR90042",
+ "captured_at": "2026-07-06T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90042",
+   "title": "System Software Engineer, DRIVE OS",
+   "jobDescription": "<p>NVIDIA is looking for a System Software Engineer, DRIVE OS on the Software Engineering team. You will work on DRIVE Orin, Thor, hypervisor, automotive safety island.</p><p>3+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "CN, Shanghai",
+   "additionalLocations": [],
+   "postedOn": "2026-06-27-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90042",
+   "jobPostingId": "post-jr90042",
+   "country": {
+    "descriptor": "CN"
+   },
+   "jobFamilyGroup": "Software Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "snapshot": "20260706T120000Z",
+ "classified": 41,
+ "needs_review": [
+  "JR90122",
+  "JR90131",
+  "JR90132"
+ ],
+ "review_rate": 0.073
+}

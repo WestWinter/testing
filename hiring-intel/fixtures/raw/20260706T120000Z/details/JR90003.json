@@ -1,0 +1,25 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/IN--Bangalore/ASIC-Verification-Engineer--New-College-Grad_JR90003",
+ "captured_at": "2026-07-06T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90003",
+   "title": "ASIC Verification Engineer, New College Grad",
+   "jobDescription": "<p>NVIDIA is looking for a ASIC Verification Engineer, New College Grad on the Hardware Engineering team. You will work on UVM, SystemVerilog, functional verification of GPU units.</p><p>0-2 years of experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "IN, Bangalore",
+   "additionalLocations": [],
+   "postedOn": "2026-06-27-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90003",
+   "jobPostingId": "post-jr90003",
+   "country": {
+    "descriptor": "IN"
+   },
+   "jobFamilyGroup": "Hardware Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

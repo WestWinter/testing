@@ -1,0 +1,25 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/US--WA--Redmond/Data-Center-Power-Architect_JR90023",
+ "captured_at": "2026-07-06T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90023",
+   "title": "Data Center Power Architect",
+   "jobDescription": "<p>NVIDIA is looking for a Data Center Power Architect on the Hardware Engineering team. You will work on megawatt scale power architecture, 800V DC distribution, grid integration.</p><p>12+ years; recognized technical leader.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "US, WA, Redmond",
+   "additionalLocations": [],
+   "postedOn": "2026-06-27-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90023",
+   "jobPostingId": "post-jr90023",
+   "country": {
+    "descriptor": "US"
+   },
+   "jobFamilyGroup": "Hardware Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

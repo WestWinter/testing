@@ -1,0 +1,25 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/PL--Warsaw/GeForce-NOW-Streaming-Infrastructure-Engineer_JR90062",
+ "captured_at": "2026-06-29T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90062",
+   "title": "GeForce NOW Streaming Infrastructure Engineer",
+   "jobDescription": "<p>NVIDIA is looking for a GeForce NOW Streaming Infrastructure Engineer on the Software Engineering team. You will work on cloud gaming, video streaming QoE, edge POPs.</p><p>3+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "PL, Warsaw",
+   "additionalLocations": [],
+   "postedOn": "2026-06-20-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90062",
+   "jobPostingId": "post-jr90062",
+   "country": {
+    "descriptor": "PL"
+   },
+   "jobFamilyGroup": "Software Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

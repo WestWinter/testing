@@ -1,0 +1,27 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/US--CA--Santa-Clara/Senior-Silicon-Photonics-Engineer_JR90142",
+ "captured_at": "2026-07-06T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90142",
+   "title": "Senior Silicon Photonics Engineer",
+   "jobDescription": "<p>NVIDIA is looking for a Senior Silicon Photonics Engineer on the Hardware Engineering team. You will work on co-packaged optics, photonic integrated circuits, optical interconnect for scale-up fabrics.</p><p>6+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "US, CA, Santa Clara",
+   "additionalLocations": [
+    "TW, Taipei"
+   ],
+   "postedOn": "2026-06-27-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90142",
+   "jobPostingId": "post-jr90142",
+   "country": {
+    "descriptor": "US"
+   },
+   "jobFamilyGroup": "Hardware Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/TW--Taipei/Technical-Program-Manager--GPU-Supply-Chain_JR90091",
+ "captured_at": "2026-06-29T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90091",
+   "title": "Technical Program Manager, GPU Supply Chain",
+   "jobDescription": "<p>NVIDIA is looking for a Technical Program Manager, GPU Supply Chain on the Operations team. You will work on CoWoS capacity planning, OSAT partners, HBM supply, foundry engagement.</p><p>6+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "TW, Taipei",
+   "additionalLocations": [
+    "US, CA, Santa Clara"
+   ],
+   "postedOn": "2026-06-20-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90091",
+   "jobPostingId": "post-jr90091",
+   "country": {
+    "descriptor": "TW"
+   },
+   "jobFamilyGroup": "Operations"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

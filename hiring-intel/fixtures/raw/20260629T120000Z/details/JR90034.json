@@ -1,0 +1,27 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/US--CA--Santa-Clara/Senior-Research-Scientist--Foundation-Model-Efficiency_JR90034",
+ "captured_at": "2026-06-29T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90034",
+   "title": "Senior Research Scientist, Foundation Model Efficiency",
+   "jobDescription": "<p>NVIDIA is looking for a Senior Research Scientist, Foundation Model Efficiency on the Research team. You will work on model compression, quantization research, publications at NeurIPS.</p><p>6+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "US, CA, Santa Clara",
+   "additionalLocations": [
+    "CA, Toronto"
+   ],
+   "postedOn": "2026-06-20-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90034",
+   "jobPostingId": "post-jr90034",
+   "country": {
+    "descriptor": "US"
+   },
+   "jobFamilyGroup": "Research"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

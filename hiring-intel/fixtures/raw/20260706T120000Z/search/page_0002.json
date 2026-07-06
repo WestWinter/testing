@@ -1,0 +1,37 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+ "captured_at": "2026-07-06T12:00:00Z",
+ "payload": {
+  "total": 41,
+  "jobPostings": [
+   {
+    "title": "Senior Silicon Photonics Engineer",
+    "externalPath": "/job/US--CA--Santa-Clara/Senior-Silicon-Photonics-Engineer_JR90142",
+    "locationsText": "2 Locations",
+    "postedOn": "Posted 9 Days Ago",
+    "bulletFields": [
+     "JR90142"
+    ]
+   }
+  ],
+  "facets": [
+   {
+    "facetParameter": "jobFamilyGroup",
+    "values": [
+     "Finance",
+     "Hardware Engineering",
+     "Human Resources",
+     "Information Technology",
+     "Legal",
+     "Marketing",
+     "Operations",
+     "Product",
+     "Research",
+     "Sales",
+     "Software Engineering",
+     "Support"
+    ]
+   }
+  ]
+ }
+}

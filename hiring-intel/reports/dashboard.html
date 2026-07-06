@@ -1,0 +1,87 @@
+<title>NVIDIA hiring-intelligence dashboard</title>
+<style>
+.viz-root {
+  --surface-1:#fcfcfb; --page:#f9f9f7; --ink-1:#0b0b0b; --ink-2:#52514e;
+  --muted:#898781; --grid:#e1e0d9; --border:rgba(11,11,11,.10);
+  --series-1:#2a78d6; --track:#cde2fb; --warn-bg:#fff7e0; --warn-ink:#6b4b00;
+}
+@media (prefers-color-scheme: dark) { .viz-root {
+  --surface-1:#1a1a19; --page:#0d0d0d; --ink-1:#ffffff; --ink-2:#c3c2b7;
+  --muted:#898781; --grid:#2c2c2a; --border:rgba(255,255,255,.10);
+  --series-1:#3987e5; --track:#104281; --warn-bg:#3a2f00; --warn-ink:#fab219;
+} }
+:root[data-theme="dark"] .viz-root {
+  --surface-1:#1a1a19; --page:#0d0d0d; --ink-1:#ffffff; --ink-2:#c3c2b7;
+  --grid:#2c2c2a; --border:rgba(255,255,255,.10);
+  --series-1:#3987e5; --track:#104281; --warn-bg:#3a2f00; --warn-ink:#fab219;
+}
+:root[data-theme="light"] .viz-root {
+  --surface-1:#fcfcfb; --page:#f9f9f7; --ink-1:#0b0b0b; --ink-2:#52514e;
+  --grid:#e1e0d9; --border:rgba(11,11,11,.10);
+  --series-1:#2a78d6; --track:#cde2fb; --warn-bg:#fff7e0; --warn-ink:#6b4b00;
+}
+.viz-root { background:var(--page); color:var(--ink-1);
+  font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; padding:24px; min-height:100vh; }
+.viz-root h1 { font-size:1.35rem; margin:0 0 2px; }
+.viz-root .sub { color:var(--ink-2); margin:0 0 18px; font-size:.9rem; }
+.banner { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--border);
+  border-radius:8px; padding:10px 14px; margin-bottom:18px; font-weight:600; }
+.kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  gap:12px; margin-bottom:20px; }
+.tile { background:var(--surface-1); border:1px solid var(--border); border-radius:10px;
+  padding:12px 14px; }
+.tlabel { color:var(--ink-2); font-size:.8rem; }
+.tvalue { font-size:2rem; font-weight:600; }
+.tnote { color:var(--muted); font-size:.72rem; }
+.grid2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:16px; }
+.card { background:var(--surface-1); border:1px solid var(--border); border-radius:10px;
+  padding:16px 18px; }
+.card h2 { font-size:.95rem; margin:0 0 12px; }
+.row { display:grid; grid-template-columns:minmax(120px,38%) 1fr 2.5em; align-items:center;
+  gap:8px; padding:3px 0; position:relative; outline:none; }
+.cat { color:var(--ink-2); font-size:.8rem; white-space:nowrap; overflow:hidden;
+  text-overflow:ellipsis; }
+.track { display:block; height:16px; border-left:1px solid var(--grid); }
+.bar { display:block; height:16px; max-height:24px; background:var(--series-1);
+  border-radius:0 4px 4px 0; }
+.val { font-size:.8rem; color:var(--ink-1); font-variant-numeric:tabular-nums; text-align:right; }
+.row:hover .bar, .row:focus .bar { filter:brightness(1.12); }
+.row:hover::after, .row:focus::after { content:attr(data-tip); position:absolute; left:38%;
+  top:-30px; background:var(--ink-1); color:var(--page); padding:3px 9px; border-radius:6px;
+  font-size:.75rem; white-space:nowrap; z-index:2; pointer-events:none; }
+details { margin-top:8px; color:var(--ink-2); font-size:.8rem; }
+table { border-collapse:collapse; width:100%; margin-top:6px; }
+th,td { text-align:left; padding:4px 8px; border-bottom:1px solid var(--grid); font-size:.8rem; }
+td:nth-child(2), td:nth-child(3) { font-variant-numeric:tabular-nums; }
+.note { color:var(--muted); font-size:.75rem; margin-top:20px; max-width:70ch; }
+.wrap { overflow-x:auto; }
+</style>
+<div class="viz-root">
+<div class="banner">⚠️ SYNTHETIC FIXTURE DATA — pipeline demo only. These are not real NVIDIA postings. Re-run after a live <code>collect.py</code> snapshot to see actual data.</div>
+<h1>NVIDIA hiring-intelligence dashboard</h1>
+<p class="sub">Snapshot <code>20260706T120000Z</code> · captured 2026-07-06T12:00:00Z ·
+public Workday job-posting data · one requisition = one role</p>
+<div class="kpis">
+<div class="tile"><div class="tlabel">Open requisitions</div><div class="tvalue">41</div><div class="tnote">unique jobReqIds</div></div>
+<div class="tile"><div class="tlabel">Core corporate/technical</div><div class="tvalue">35</div><div class="tnote">excl. support, interns, evergreen</div></div>
+<div class="tile"><div class="tlabel">Countries (primary loc.)</div><div class="tvalue">8</div><div class="tnote">core roles</div></div>
+<div class="tile"><div class="tlabel">Flagged for manual review</div><div class="tvalue">3</div><div class="tnote">theme confidence &lt; 0.60</div></div>
+<div class="tile"><div class="tlabel">New since prior capture</div><div class="tvalue">7</div><div class="tnote">requisitions</div></div><div class="tile"><div class="tlabel">Delisted (marked closed)</div><div class="tvalue">0</div><div class="tnote">filled or withdrawn — payloads don&#x27;t say which</div></div><div class="tile"><div class="tlabel">Re-opened</div><div class="tvalue">0</div><div class="tnote">previously closed</div></div>
+</div>
+<div class="grid2">
+<section class="card"><h2>Core roles by investor theme (inferred labels)</h2><div class="chart"><div class="row" tabindex="0" data-tip="AI software &amp; inference: 6 roles (17% of core)"><span class="cat">AI software &amp; inference</span><span class="track"><span class="bar" style="width:100.0%"></span></span><span class="val">6</span></div><div class="row" tabindex="0" data-tip="Silicon &amp; hardware eng.: 5 roles (14% of core)"><span class="cat">Silicon &amp; hardware eng.</span><span class="track"><span class="bar" style="width:83.3%"></span></span><span class="val">5</span></div><div class="row" tabindex="0" data-tip="Data-center &amp; AI infra: 5 roles (14% of core)"><span class="cat">Data-center &amp; AI infra</span><span class="track"><span class="bar" style="width:83.3%"></span></span><span class="val">5</span></div><div class="row" tabindex="0" data-tip="Networking &amp; optics: 4 roles (11% of core)"><span class="cat">Networking &amp; optics</span><span class="track"><span class="bar" style="width:66.7%"></span></span><span class="val">4</span></div><div class="row" tabindex="0" data-tip="Sales &amp; GTM: 3 roles (9% of core)"><span class="cat">Sales &amp; GTM</span><span class="track"><span class="bar" style="width:50.0%"></span></span><span class="val">3</span></div><div class="row" tabindex="0" data-tip="Supply chain &amp; capacity: 3 roles (9% of core)"><span class="cat">Supply chain &amp; capacity</span><span class="track"><span class="bar" style="width:50.0%"></span></span><span class="val">3</span></div><div class="row" tabindex="0" data-tip="Automotive / DRIVE: 2 roles (6% of core)"><span class="cat">Automotive / DRIVE</span><span class="track"><span class="bar" style="width:33.3%"></span></span><span class="val">2</span></div><div class="row" tabindex="0" data-tip="Robotics &amp; edge: 2 roles (6% of core)"><span class="cat">Robotics &amp; edge</span><span class="track"><span class="bar" style="width:33.3%"></span></span><span class="val">2</span></div><div class="row" tabindex="0" data-tip="Frontier research: 1 roles (3% of core)"><span class="cat">Frontier research</span><span class="track"><span class="bar" style="width:16.7%"></span></span><span class="val">1</span></div><div class="row" tabindex="0" data-tip="Gaming &amp; consumer: 1 roles (3% of core)"><span class="cat">Gaming &amp; consumer</span><span class="track"><span class="bar" style="width:16.7%"></span></span><span class="val">1</span></div><div class="row" tabindex="0" data-tip="Omniverse / digital twins: 1 roles (3% of core)"><span class="cat">Omniverse / digital twins</span><span class="track"><span class="bar" style="width:16.7%"></span></span><span class="val">1</span></div><div class="row" tabindex="0" data-tip="Corporate / G&amp;A: 1 roles (3% of core)"><span class="cat">Corporate / G&amp;A</span><span class="track"><span class="bar" style="width:16.7%"></span></span><span class="val">1</span></div><div class="row" tabindex="0" data-tip="Quantum (CUDA-Q): 1 roles (3% of core)"><span class="cat">Quantum (CUDA-Q)</span><span class="track"><span class="bar" style="width:16.7%"></span></span><span class="val">1</span></div></div><details><summary>Table view</summary><table><tr><th>Category</th><th>Roles</th><th>Share</th></tr><tr><td>AI software &amp; inference</td><td>6</td><td>17%</td></tr><tr><td>Silicon &amp; hardware eng.</td><td>5</td><td>14%</td></tr><tr><td>Data-center &amp; AI infra</td><td>5</td><td>14%</td></tr><tr><td>Networking &amp; optics</td><td>4</td><td>11%</td></tr><tr><td>Sales &amp; GTM</td><td>3</td><td>9%</td></tr><tr><td>Supply chain &amp; capacity</td><td>3</td><td>9%</td></tr><tr><td>Automotive / DRIVE</td><td>2</td><td>6%</td></tr><tr><td>Robotics &amp; edge</td><td>2</td><td>6%</td></tr><tr><td>Frontier research</td><td>1</td><td>3%</td></tr><tr><td>Gaming &amp; consumer</td><td>1</td><td>3%</td></tr><tr><td>Omniverse / digital twins</td><td>1</td><td>3%</td></tr><tr><td>Corporate / G&amp;A</td><td>1</td><td>3%</td></tr><tr><td>Quantum (CUDA-Q)</td><td>1</td><td>3%</td></tr></table></details></section>
+<section class="card"><h2>Core roles by function</h2><div class="chart"><div class="row" tabindex="0" data-tip="Software engineering: 14 roles (40% of core)"><span class="cat">Software engineering</span><span class="track"><span class="bar" style="width:100.0%"></span></span><span class="val">14</span></div><div class="row" tabindex="0" data-tip="Hardware engineering: 8 roles (23% of core)"><span class="cat">Hardware engineering</span><span class="track"><span class="bar" style="width:57.1%"></span></span><span class="val">8</span></div><div class="row" tabindex="0" data-tip="Sales &amp; GTM: 4 roles (11% of core)"><span class="cat">Sales &amp; GTM</span><span class="track"><span class="bar" style="width:28.6%"></span></span><span class="val">4</span></div><div class="row" tabindex="0" data-tip="Ops &amp; supply chain: 3 roles (9% of core)"><span class="cat">Ops &amp; supply chain</span><span class="track"><span class="bar" style="width:21.4%"></span></span><span class="val">3</span></div><div class="row" tabindex="0" data-tip="G&amp;A: 3 roles (9% of core)"><span class="cat">G&amp;A</span><span class="track"><span class="bar" style="width:21.4%"></span></span><span class="val">3</span></div><div class="row" tabindex="0" data-tip="Research: 2 roles (6% of core)"><span class="cat">Research</span><span class="track"><span class="bar" style="width:14.3%"></span></span><span class="val">2</span></div><div class="row" tabindex="0" data-tip="Product: 1 roles (3% of core)"><span class="cat">Product</span><span class="track"><span class="bar" style="width:7.1%"></span></span><span class="val">1</span></div></div><details><summary>Table view</summary><table><tr><th>Category</th><th>Roles</th><th>Share</th></tr><tr><td>Software engineering</td><td>14</td><td>40%</td></tr><tr><td>Hardware engineering</td><td>8</td><td>23%</td></tr><tr><td>Sales &amp; GTM</td><td>4</td><td>11%</td></tr><tr><td>Ops &amp; supply chain</td><td>3</td><td>9%</td></tr><tr><td>G&amp;A</td><td>3</td><td>9%</td></tr><tr><td>Research</td><td>2</td><td>6%</td></tr><tr><td>Product</td><td>1</td><td>3%</td></tr></table></details></section>
+<section class="card"><h2>Core roles by primary-location country</h2><div class="chart"><div class="row" tabindex="0" data-tip="US: 22 roles (63% of core)"><span class="cat">US</span><span class="track"><span class="bar" style="width:100.0%"></span></span><span class="val">22</span></div><div class="row" tabindex="0" data-tip="TW: 4 roles (11% of core)"><span class="cat">TW</span><span class="track"><span class="bar" style="width:18.2%"></span></span><span class="val">4</span></div><div class="row" tabindex="0" data-tip="IN: 3 roles (9% of core)"><span class="cat">IN</span><span class="track"><span class="bar" style="width:13.6%"></span></span><span class="val">3</span></div><div class="row" tabindex="0" data-tip="DE: 2 roles (6% of core)"><span class="cat">DE</span><span class="track"><span class="bar" style="width:9.1%"></span></span><span class="val">2</span></div><div class="row" tabindex="0" data-tip="IL: 1 roles (3% of core)"><span class="cat">IL</span><span class="track"><span class="bar" style="width:4.5%"></span></span><span class="val">1</span></div><div class="row" tabindex="0" data-tip="JP: 1 roles (3% of core)"><span class="cat">JP</span><span class="track"><span class="bar" style="width:4.5%"></span></span><span class="val">1</span></div><div class="row" tabindex="0" data-tip="CN: 1 roles (3% of core)"><span class="cat">CN</span><span class="track"><span class="bar" style="width:4.5%"></span></span><span class="val">1</span></div><div class="row" tabindex="0" data-tip="SG: 1 roles (3% of core)"><span class="cat">SG</span><span class="track"><span class="bar" style="width:4.5%"></span></span><span class="val">1</span></div></div><details><summary>Table view</summary><table><tr><th>Category</th><th>Roles</th><th>Share</th></tr><tr><td>US</td><td>22</td><td>63%</td></tr><tr><td>TW</td><td>4</td><td>11%</td></tr><tr><td>IN</td><td>3</td><td>9%</td></tr><tr><td>DE</td><td>2</td><td>6%</td></tr><tr><td>IL</td><td>1</td><td>3%</td></tr><tr><td>JP</td><td>1</td><td>3%</td></tr><tr><td>CN</td><td>1</td><td>3%</td></tr><tr><td>SG</td><td>1</td><td>3%</td></tr></table></details></section>
+<section class="card"><h2>Core roles by seniority</h2><div class="chart"><div class="row" tabindex="0" data-tip="Senior: 14 roles (40% of core)"><span class="cat">Senior</span><span class="track"><span class="bar" style="width:100.0%"></span></span><span class="val">14</span></div><div class="row" tabindex="0" data-tip="IC: 12 roles (34% of core)"><span class="cat">IC</span><span class="track"><span class="bar" style="width:85.7%"></span></span><span class="val">12</span></div><div class="row" tabindex="0" data-tip="Manager: 4 roles (11% of core)"><span class="cat">Manager</span><span class="track"><span class="bar" style="width:28.6%"></span></span><span class="val">4</span></div><div class="row" tabindex="0" data-tip="Principal / Distinguished: 3 roles (9% of core)"><span class="cat">Principal / Distinguished</span><span class="track"><span class="bar" style="width:21.4%"></span></span><span class="val">3</span></div><div class="row" tabindex="0" data-tip="Entry: 1 roles (3% of core)"><span class="cat">Entry</span><span class="track"><span class="bar" style="width:7.1%"></span></span><span class="val">1</span></div><div class="row" tabindex="0" data-tip="Director+: 1 roles (3% of core)"><span class="cat">Director+</span><span class="track"><span class="bar" style="width:7.1%"></span></span><span class="val">1</span></div></div><details><summary>Table view</summary><table><tr><th>Category</th><th>Roles</th><th>Share</th></tr><tr><td>Senior</td><td>14</td><td>40%</td></tr><tr><td>IC</td><td>12</td><td>34%</td></tr><tr><td>Manager</td><td>4</td><td>11%</td></tr><tr><td>Principal / Distinguished</td><td>3</td><td>9%</td></tr><tr><td>Entry</td><td>1</td><td>3%</td></tr><tr><td>Director+</td><td>1</td><td>3%</td></tr></table></details></section>
+</div>
+<section class="card" style="margin-top:16px">
+<h2>Watchlist — highest-signal postings (read the source before citing)</h2>
+<div class="wrap"><table><tr><th>Score</th><th>Req ID</th><th>Title</th><th>Theme</th></tr>
+<tr><td>5</td><td><code>JR90023</code></td><td>Data Center Power Architect</td><td>Data-center &amp; AI infra</td></tr><tr><td>4</td><td><code>JR90022</code></td><td>Solutions Architect, AI Factories</td><td>Data-center &amp; AI infra</td></tr><tr><td>4</td><td><code>JR90051</code></td><td>Robotics Software Engineer, Isaac Manipulation</td><td>Robotics &amp; edge</td></tr><tr><td>4</td><td><code>JR90091</code></td><td>Technical Program Manager, GPU Supply Chain</td><td>Supply chain &amp; capacity</td></tr><tr><td>4</td><td><code>JR90142</code></td><td>Senior Silicon Photonics Engineer</td><td>Networking &amp; optics</td></tr><tr><td>3</td><td><code>JR90011</code></td><td>Senior Software Engineer, NVLink Fabric</td><td>Networking &amp; optics</td></tr><tr><td>3</td><td><code>JR90013</code></td><td>Senior Product Manager, Spectrum-X Ethernet</td><td>Networking &amp; optics</td></tr><tr><td>3</td><td><code>JR90141</code></td><td>Quantum Algorithms Engineer, CUDA-Q</td><td>Quantum (CUDA-Q)</td></tr><tr><td>2</td><td><code>JR90005</code></td><td>Thermal Engineer, Data Center Systems</td><td>Data-center &amp; AI infra</td></tr><tr><td>2</td><td><code>JR90012</code></td><td>InfiniBand Firmware Engineer</td><td>Networking &amp; optics</td></tr>
+</table></div>
+</section>
+<p class="note">Counts are facts from public payloads; theme/function/seniority labels and
+watchlist scores are analyst inference. Job postings show where the company is recruiting —
+they do not prove strategy, budget, launch timing, or revenue impact. Delistings do not
+distinguish filled from withdrawn.</p>
+</div>

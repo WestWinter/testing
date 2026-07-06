@@ -1,0 +1,25 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/US--CA--Santa-Clara/Quantum-Algorithms-Engineer--CUDA-Q_JR90141",
+ "captured_at": "2026-07-06T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90141",
+   "title": "Quantum Algorithms Engineer, CUDA-Q",
+   "jobDescription": "<p>NVIDIA is looking for a Quantum Algorithms Engineer, CUDA-Q on the Software Engineering team. You will work on CUDA-Q, quantum-classical hybrid workflows, GPU simulation of quantum circuits.</p><p>3+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "US, CA, Santa Clara",
+   "additionalLocations": [],
+   "postedOn": "2026-06-27-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90141",
+   "jobPostingId": "post-jr90141",
+   "country": {
+    "descriptor": "US"
+   },
+   "jobFamilyGroup": "Software Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/TW--Taipei/Senior-Signal-Integrity-Engineer_JR90004",
+ "captured_at": "2026-07-06T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90004",
+   "title": "Senior Signal Integrity Engineer",
+   "jobDescription": "<p>NVIDIA is looking for a Senior Signal Integrity Engineer on the Hardware Engineering team. You will work on high speed SerDes, PCB, HBM interfaces, power delivery.</p><p>6+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "TW, Taipei",
+   "additionalLocations": [],
+   "postedOn": "2026-06-27-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90004",
+   "jobPostingId": "post-jr90004",
+   "country": {
+    "descriptor": "TW"
+   },
+   "jobFamilyGroup": "Hardware Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

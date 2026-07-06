@@ -1,0 +1,25 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/TW--Hsinchu/Manufacturing-Test-Engineer_JR90092",
+ "captured_at": "2026-07-06T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90092",
+   "title": "Manufacturing Test Engineer",
+   "jobDescription": "<p>NVIDIA is looking for a Manufacturing Test Engineer on the Operations team. You will work on system level test, board bring-up, yield analytics.</p><p>3+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "TW, Hsinchu",
+   "additionalLocations": [],
+   "postedOn": "2026-06-27-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90092",
+   "jobPostingId": "post-jr90092",
+   "country": {
+    "descriptor": "TW"
+   },
+   "jobFamilyGroup": "Operations"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

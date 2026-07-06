@@ -1,0 +1,27 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/IL--Yokneam/InfiniBand-Firmware-Engineer_JR90012",
+ "captured_at": "2026-06-29T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90012",
+   "title": "InfiniBand Firmware Engineer",
+   "jobDescription": "<p>NVIDIA is looking for a InfiniBand Firmware Engineer on the Software Engineering team. You will work on InfiniBand, RDMA, congestion control, NIC firmware.</p><p>3+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "IL, Yokneam",
+   "additionalLocations": [
+    "IL, Tel Aviv"
+   ],
+   "postedOn": "2026-06-20-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90012",
+   "jobPostingId": "post-jr90012",
+   "country": {
+    "descriptor": "IL"
+   },
+   "jobFamilyGroup": "Software Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/TW--Taipei/Senior-Engineer_JR90132",
+ "captured_at": "2026-07-06T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90132",
+   "title": "Senior Engineer",
+   "jobDescription": "<p>NVIDIA is looking for a Senior Engineer on the Hardware Engineering team. You will work on cross functional execution, debug, bring-up.</p><p>6+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "TW, Taipei",
+   "additionalLocations": [],
+   "postedOn": "2026-06-27-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90132",
+   "jobPostingId": "post-jr90132",
+   "country": {
+    "descriptor": "TW"
+   },
+   "jobFamilyGroup": "Hardware Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

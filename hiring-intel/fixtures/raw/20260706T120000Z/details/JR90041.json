@@ -1,0 +1,27 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/US--CA--Santa-Clara/Senior-Autonomous-Driving-Software-Engineer--Planning_JR90041",
+ "captured_at": "2026-07-06T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90041",
+   "title": "Senior Autonomous Driving Software Engineer, Planning",
+   "jobDescription": "<p>NVIDIA is looking for a Senior Autonomous Driving Software Engineer, Planning on the Software Engineering team. You will work on DRIVE AV stack, motion planning, safety cases, ISO 26262.</p><p>6+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "US, CA, Santa Clara",
+   "additionalLocations": [
+    "DE, Berlin"
+   ],
+   "postedOn": "2026-06-27-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90041",
+   "jobPostingId": "post-jr90041",
+   "country": {
+    "descriptor": "US"
+   },
+   "jobFamilyGroup": "Software Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

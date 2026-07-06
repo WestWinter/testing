@@ -1,0 +1,27 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/US--Remote/Senior-Site-Reliability-Engineer--DGX-Cloud_JR90021",
+ "captured_at": "2026-07-06T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90021",
+   "title": "Senior Site Reliability Engineer, DGX Cloud",
+   "jobDescription": "<p>NVIDIA is looking for a Senior Site Reliability Engineer, DGX Cloud on the Software Engineering team. You will work on Kubernetes, Slurm, large GPU cluster operations, DGX Cloud.</p><p>6+ years of relevant experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "US, Remote",
+   "additionalLocations": [
+    "PL, Warsaw"
+   ],
+   "postedOn": "2026-06-27-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90021",
+   "jobPostingId": "post-jr90021",
+   "country": {
+    "descriptor": "US"
+   },
+   "jobFamilyGroup": "Software Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

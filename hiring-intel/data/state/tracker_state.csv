@@ -1,0 +1,44 @@
+req_id,title,theme,function,seniority,role_pool,first_seen,last_seen,status,missing_streak,reopen_count
+JR90001,Senior ASIC Design Engineer,silicon_engineering,hw_engineering,senior,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90002,Principal Physical Design Engineer,silicon_engineering,hw_engineering,principal_distinguished,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90003,"ASIC Verification Engineer, New College Grad",silicon_engineering,hw_engineering,entry,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90004,Senior Signal Integrity Engineer,silicon_engineering,hw_engineering,senior,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90005,"Thermal Engineer, Data Center Systems",datacenter_ai_infra,hw_engineering,ic,core,2026-07-06T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90011,"Senior Software Engineer, NVLink Fabric",networking,sw_engineering,senior,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90012,InfiniBand Firmware Engineer,networking,sw_engineering,ic,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90013,"Senior Product Manager, Spectrum-X Ethernet",networking,product,manager,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90014,"DPU Software Architect, BlueField",networking,sw_engineering,principal_distinguished,core,2026-06-29T12:00:00Z,2026-06-29T12:00:00Z,absent,1,0
+JR90021,"Senior Site Reliability Engineer, DGX Cloud",datacenter_ai_infra,sw_engineering,senior,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90022,"Solutions Architect, AI Factories",datacenter_ai_infra,sales_gtm,principal_distinguished,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90023,Data Center Power Architect,datacenter_ai_infra,hw_engineering,principal_distinguished,core,2026-07-06T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90031,"Senior Deep Learning Software Engineer, Inference",ai_software_inference,sw_engineering,senior,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90032,"CUDA Kernel Engineer, Attention Optimization",ai_software_inference,sw_engineering,ic,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90033,"AI Frameworks Engineer, NeMo Training",ai_software_inference,sw_engineering,ic,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90034,"Senior Research Scientist, Foundation Model Efficiency",ai_software_inference,research,senior,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90035,"Research Scientist, Physical AI and World Models",research_frontier,research,ic,core,2026-07-06T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90041,"Senior Autonomous Driving Software Engineer, Planning",autonomous_vehicles,sw_engineering,senior,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90042,"System Software Engineer, DRIVE OS",autonomous_vehicles,sw_engineering,ic,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90051,"Robotics Software Engineer, Isaac Manipulation",robotics_edge,sw_engineering,ic,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90052,"Embedded Software Engineer, Jetson Platform",robotics_edge,sw_engineering,ic,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90061,"Senior Rendering Engineer, RTX Neural Graphics",gaming_consumer,sw_engineering,senior,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90062,GeForce NOW Streaming Infrastructure Engineer,gaming_consumer,sw_engineering,ic,core,2026-06-29T12:00:00Z,2026-06-29T12:00:00Z,absent,1,0
+JR90071,"Senior Omniverse Solutions Engineer, Industrial Digital Twins",omniverse_simulation,sw_engineering,senior,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90081,"Enterprise Account Manager, Healthcare AI",sales_gtm_expansion,sales_gtm,manager,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90082,"Developer Relations Manager, Generative AI",ai_software_inference,sales_gtm,manager,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90083,Sales Operations Analyst,sales_gtm_expansion,sales_gtm,ic,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90091,"Technical Program Manager, GPU Supply Chain",supply_chain_capacity,operations_supply_chain,manager,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90092,Manufacturing Test Engineer,supply_chain_capacity,operations_supply_chain,ic,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90093,Senior Demand Planner,supply_chain_capacity,operations_supply_chain,senior,core,2026-07-06T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90101,"Senior Financial Analyst, Data Center BU",datacenter_ai_infra,ga,senior,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90102,"Director, Export Compliance",corporate_ga,ga,director_plus,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90103,HR Business Partner,sales_gtm_expansion,ga,ic,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90104,IT Support Technician,corporate_ga,support,ic,support,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90111,"Customer Support Engineer, Enterprise GPU",sales_gtm_expansion,support,ic,support,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90112,"Technical Support Specialist, GeForce NOW",gaming_consumer,support,ic,support,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90121,"Hardware Engineering Intern, Summer 2027",silicon_engineering,hw_engineering,intern,intern,2026-07-06T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90122,Software Engineering Talent Community - Future Openings,ai_software_inference,sw_engineering,ic,evergreen_pipeline,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90123,"PhD Research Intern, Networking",networking,research,intern,intern,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90131,Member of Technical Staff,ai_software_inference,sw_engineering,senior,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90132,Senior Engineer,silicon_engineering,hw_engineering,senior,core,2026-06-29T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90141,"Quantum Algorithms Engineer, CUDA-Q",quantum,sw_engineering,ic,core,2026-07-06T12:00:00Z,2026-07-06T12:00:00Z,active,0,0
+JR90142,Senior Silicon Photonics Engineer,networking,hw_engineering,senior,core,2026-07-06T12:00:00Z,2026-07-06T12:00:00Z,active,0,0

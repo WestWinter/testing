@@ -1,0 +1,11 @@
+{
+ "snapshot": "20260629T120000Z",
+ "synthetic": true,
+ "captured_at": "2026-06-29T12:00:00Z",
+ "total_reported_by_source": 36,
+ "unique_requisitions": 36,
+ "search_duplicates_collapsed": 0,
+ "location_rows": 44,
+ "multi_location_reqs": 8,
+ "missing_detail_payloads": []
+}

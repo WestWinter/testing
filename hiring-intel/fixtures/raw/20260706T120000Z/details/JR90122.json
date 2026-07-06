@@ -1,0 +1,27 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/US--CA--Santa-Clara/Software-Engineering-Talent-Community---Future-Openings_JR90122",
+ "captured_at": "2026-07-06T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90122",
+   "title": "Software Engineering Talent Community - Future Openings",
+   "jobDescription": "<p>NVIDIA is looking for a Software Engineering Talent Community - Future Openings on the Software Engineering team. You will work on evergreen requisition, join our talent community, future opportunities.</p><p>This is an evergreen posting for future openings.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "US, CA, Santa Clara",
+   "additionalLocations": [
+    "US, Remote"
+   ],
+   "postedOn": "2026-06-27-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90122",
+   "jobPostingId": "post-jr90122",
+   "country": {
+    "descriptor": "US"
+   },
+   "jobFamilyGroup": "Software Engineering"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}

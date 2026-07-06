@@ -1,0 +1,25 @@
+{
+ "source_url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/job/US--TX--Austin/IT-Support-Technician_JR90104",
+ "captured_at": "2026-06-29T12:00:00Z",
+ "payload": {
+  "jobPostingInfo": {
+   "id": "guid-jr90104",
+   "title": "IT Support Technician",
+   "jobDescription": "<p>NVIDIA is looking for a IT Support Technician on the Information Technology team. You will work on helpdesk, ticket queue, AV support.</p><p>0-2 years of experience.</p><p>NVIDIA is an equal opportunity employer.</p>",
+   "location": "US, TX, Austin",
+   "additionalLocations": [],
+   "postedOn": "2026-06-20-07:00",
+   "timeType": "Full time",
+   "jobReqId": "JR90104",
+   "jobPostingId": "post-jr90104",
+   "country": {
+    "descriptor": "US"
+   },
+   "jobFamilyGroup": "Information Technology"
+  },
+  "hiringOrganization": {
+   "name": "NVIDIA",
+   "url": "https://www.nvidia.com"
+  }
+ }
+}
