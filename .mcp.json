@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "china-travel-kit": {
+      "command": "sh",
+      "args": ["-c", "cd \"${CLAUDE_PROJECT_DIR:-.}/.claude/skills/china-travel-kit\" && exec python3 -m china_travel_kit mcp"]
+    }
+  }
+}
