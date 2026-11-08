@@ -1,0 +1,284 @@
+{
+  "_about": "Universe for /market-scan. Index codes are LSEG RICs. 'fallback' is the MSCI equivalent used when LSEG returns an entitlement error. Constituent weights are APPROXIMATE index weights in %, used only to weight the bottom-up EPS growth; refresh them from the index factsheets periodically. id_type 'RIC' is preferred; 'Ticker' is used only where the RIC has lowercase letters (which the IBES tool rejects). 'ccy' is the expected EPS currency: an estimate in a different currency, or one with several estPermIDs, means the identifier resolved to the wrong company and must be discarded.",
+  "weights_as_of": "2026 estimate (unverified)",
+  "benchmark": ".SPX",
+  "indices": [
+    {"name": "S&P 500", "ric": ".SPX", "fallback": null, "earnings": "S&P 500"},
+    {"name": "Nasdaq 100", "ric": ".NDX", "fallback": ".dMIUS0000GPUS", "fallback_name": "MSCI USA Growth", "earnings": "Nasdaq 100"},
+    {"name": "Russell 2000", "ric": ".RUT", "fallback": null, "earnings": null},
+    {"name": "Euro Stoxx 50", "ric": ".STOXX50E", "fallback": null, "earnings": "Euro Stoxx 50"},
+    {"name": "STOXX 600", "ric": ".STOXX", "fallback": null, "earnings": "STOXX 600"},
+    {"name": "FTSE 100", "ric": ".FTSE", "fallback": null, "earnings": "FTSE 100"},
+    {"name": "DAX", "ric": ".GDAXI", "fallback": null, "earnings": "DAX"},
+    {"name": "TOPIX", "ric": ".TOPX", "fallback": null, "earnings": "Japan"},
+    {"name": "Nikkei 225", "ric": ".N225", "fallback": null, "earnings": "Japan"},
+    {"name": "Hang Seng", "ric": ".HSI", "fallback": ".dMICN00000PUS", "fallback_name": "MSCI China", "earnings": "Hang Seng"},
+    {"name": "MSCI Hong Kong", "ric": ".dMIHK00000PUS", "fallback": null, "earnings": "Hong Kong"},
+    {"name": "CSI 300", "ric": ".CSI300", "fallback": null, "earnings": "CSI 300"},
+    {"name": "KOSPI", "ric": ".KS11", "fallback": ".dMIKR00000PUS", "fallback_name": "MSCI Korea", "earnings": "Korea"},
+    {"name": "Nifty 50", "ric": ".NSEI", "fallback": null, "earnings": "Nifty 50"},
+    {"name": "MSCI EM", "ric": ".MSCIEF", "fallback": null, "earnings": "MSCI EM"}
+  ],
+  "sectors": [
+    {"name": "S&P Info Tech", "ric": ".SPLRCT", "earnings": "US Info Tech"},
+    {"name": "S&P Comm Svcs", "ric": ".SPLRCL", "earnings": "US Comm Svcs"},
+    {"name": "S&P Cons Disc", "ric": ".SPLRCD", "earnings": "US Cons Disc"},
+    {"name": "S&P Financials", "ric": ".SPSY", "earnings": "US Financials"},
+    {"name": "S&P Health Care", "ric": ".SPXHC", "earnings": "US Health Care"},
+    {"name": "S&P Industrials", "ric": ".SPLRCI", "earnings": "US Industrials"},
+    {"name": "S&P Cons Staples", "ric": ".SPLRCS", "earnings": "US Cons Staples"},
+    {"name": "S&P Energy", "ric": ".SPNY", "earnings": "US Energy"},
+    {"name": "S&P Utilities", "ric": ".SPLRCU", "earnings": "US Utilities"},
+    {"name": "S&P Real Estate", "ric": ".SPLRCR", "earnings": "US Real Estate"},
+    {"name": "S&P Materials", "ric": ".SPLRCM", "earnings": "US Materials"}
+  ],
+  "earnings_groups": {
+    "S&P 500": [
+      {"name": "NVIDIA", "id": "NVDA", "id_type": "Ticker", "ccy": "USD", "w": 7.5},
+      {"name": "Microsoft", "id": "MSFT", "id_type": "Ticker", "ccy": "USD", "w": 6.5},
+      {"name": "Apple", "id": "AAPL", "id_type": "Ticker", "ccy": "USD", "w": 6.5},
+      {"name": "Amazon", "id": "AMZN", "id_type": "Ticker", "ccy": "USD", "w": 4.0},
+      {"name": "Alphabet", "id": "GOOGL", "id_type": "Ticker", "ccy": "USD", "w": 4.0},
+      {"name": "Meta", "id": "META", "id_type": "Ticker", "ccy": "USD", "w": 3.0},
+      {"name": "Broadcom", "id": "AVGO", "id_type": "Ticker", "ccy": "USD", "w": 2.8},
+      {"name": "Tesla", "id": "TSLA", "id_type": "Ticker", "ccy": "USD", "w": 2.0},
+      {"name": "Berkshire", "id": "BRK.B", "id_type": "Ticker", "ccy": "USD", "w": 1.6},
+      {"name": "JPMorgan", "id": "JPM", "id_type": "Ticker", "ccy": "USD", "w": 1.5},
+      {"name": "Eli Lilly", "id": "LLY", "id_type": "Ticker", "ccy": "USD", "w": 1.3},
+      {"name": "Visa", "id": "V", "id_type": "Ticker", "ccy": "USD", "w": 1.1},
+      {"name": "Exxon", "id": "XOM", "id_type": "Ticker", "ccy": "USD", "w": 0.9},
+      {"name": "Walmart", "id": "WMT", "id_type": "Ticker", "ccy": "USD", "w": 0.9},
+      {"name": "Mastercard", "id": "MA", "id_type": "Ticker", "ccy": "USD", "w": 0.9},
+      {"name": "Costco", "id": "COST", "id_type": "Ticker", "ccy": "USD", "w": 0.8},
+      {"name": "Netflix", "id": "NFLX", "id_type": "Ticker", "ccy": "USD", "w": 0.8},
+      {"name": "Oracle", "id": "ORCL", "id_type": "Ticker", "ccy": "USD", "w": 0.8}
+    ],
+    "Nasdaq 100": [
+      {"name": "NVIDIA", "id": "NVDA", "id_type": "Ticker", "ccy": "USD", "w": 9.0},
+      {"name": "Microsoft", "id": "MSFT", "id_type": "Ticker", "ccy": "USD", "w": 8.0},
+      {"name": "Apple", "id": "AAPL", "id_type": "Ticker", "ccy": "USD", "w": 8.0},
+      {"name": "Amazon", "id": "AMZN", "id_type": "Ticker", "ccy": "USD", "w": 5.5},
+      {"name": "Alphabet", "id": "GOOGL", "id_type": "Ticker", "ccy": "USD", "w": 5.0},
+      {"name": "Broadcom", "id": "AVGO", "id_type": "Ticker", "ccy": "USD", "w": 5.0},
+      {"name": "Meta", "id": "META", "id_type": "Ticker", "ccy": "USD", "w": 4.0},
+      {"name": "Tesla", "id": "TSLA", "id_type": "Ticker", "ccy": "USD", "w": 3.0},
+      {"name": "Costco", "id": "COST", "id_type": "Ticker", "ccy": "USD", "w": 2.5},
+      {"name": "Netflix", "id": "NFLX", "id_type": "Ticker", "ccy": "USD", "w": 2.5},
+      {"name": "AMD", "id": "AMD", "id_type": "Ticker", "ccy": "USD", "w": 1.5},
+      {"name": "Cisco", "id": "CSCO", "id_type": "Ticker", "ccy": "USD", "w": 1.3},
+      {"name": "T-Mobile US", "id": "TMUS", "id_type": "Ticker", "ccy": "USD", "w": 1.2},
+      {"name": "PepsiCo", "id": "PEP", "id_type": "Ticker", "ccy": "USD", "w": 1.0},
+      {"name": "Intuit", "id": "INTU", "id_type": "Ticker", "ccy": "USD", "w": 0.9}
+    ],
+    "Euro Stoxx 50": [
+      {"name": "ASML", "id": "ASML.AS", "id_type": "RIC", "ccy": "EUR", "w": 9.0},
+      {"name": "SAP", "id": "SAPG.DE", "id_type": "RIC", "ccy": "EUR", "w": 5.5},
+      {"name": "Siemens", "id": "SIE", "id_type": "Ticker", "ccy": "EUR", "w": 4.5},
+      {"name": "LVMH", "id": "LVMH.PA", "id_type": "RIC", "ccy": "EUR", "w": 4.0},
+      {"name": "TotalEnergies", "id": "TTEF.PA", "id_type": "RIC", "ccy": "USD", "w": 3.5},
+      {"name": "Allianz", "id": "ALVG.DE", "id_type": "RIC", "ccy": "EUR", "w": 3.5},
+      {"name": "Santander", "id": "SAN.MC", "id_type": "RIC", "ccy": "EUR", "w": 3.5},
+      {"name": "Schneider", "id": "SCHN.PA", "id_type": "RIC", "ccy": "EUR", "w": 3.5},
+      {"name": "Airbus", "id": "AIR.PA", "id_type": "RIC", "ccy": "EUR", "w": 3.0},
+      {"name": "Iberdrola", "id": "IBE.MC", "id_type": "RIC", "ccy": "EUR", "w": 3.0},
+      {"name": "L'Oreal", "id": "OREP.PA", "id_type": "RIC", "ccy": "EUR", "w": 2.5},
+      {"name": "BNP Paribas", "id": "BNPP.PA", "id_type": "RIC", "ccy": "EUR", "w": 2.5},
+      {"name": "AXA", "id": "AXAF.PA", "id_type": "RIC", "ccy": "EUR", "w": 2.5},
+      {"name": "Safran", "id": "SAF.PA", "id_type": "RIC", "ccy": "EUR", "w": 2.5},
+      {"name": "Intesa Sanpaolo", "id": "ISP.MI", "id_type": "RIC", "ccy": "EUR", "w": 2.0},
+      {"name": "Enel", "id": "ENEI.MI", "id_type": "RIC", "ccy": "EUR", "w": 2.0}
+    ],
+    "STOXX 600": [
+      {"name": "ASML", "id": "ASML.AS", "id_type": "RIC", "ccy": "EUR", "w": 3.5},
+      {"name": "SAP", "id": "SAPG.DE", "id_type": "RIC", "ccy": "EUR", "w": 2.3},
+      {"name": "Nestle", "id": "NESN.S", "id_type": "RIC", "ccy": "CHF", "w": 2.0},
+      {"name": "Novartis", "id": "NOVN.S", "id_type": "RIC", "ccy": "USD", "w": 2.0},
+      {"name": "AstraZeneca", "id": "AZN.L", "id_type": "RIC", "ccy": "USD", "w": 2.0},
+      {"name": "Shell", "id": "SHEL.L", "id_type": "RIC", "ccy": "USD", "w": 1.8},
+      {"name": "HSBC", "id": "HSBA.L", "id_type": "RIC", "ccy": "USD", "w": 1.8},
+      {"name": "Siemens", "id": "SIE", "id_type": "Ticker", "ccy": "EUR", "w": 1.7},
+      {"name": "LVMH", "id": "LVMH.PA", "id_type": "RIC", "ccy": "EUR", "w": 1.5},
+      {"name": "Unilever", "id": "ULVR.L", "id_type": "RIC", "ccy": "EUR", "w": 1.2},
+      {"name": "Allianz", "id": "ALVG.DE", "id_type": "RIC", "ccy": "EUR", "w": 1.2},
+      {"name": "Schneider", "id": "SCHN.PA", "id_type": "RIC", "ccy": "EUR", "w": 1.2},
+      {"name": "TotalEnergies", "id": "TTEF.PA", "id_type": "RIC", "ccy": "USD", "w": 1.2},
+      {"name": "Santander", "id": "SAN.MC", "id_type": "RIC", "ccy": "EUR", "w": 1.1},
+      {"name": "Airbus", "id": "AIR.PA", "id_type": "RIC", "ccy": "EUR", "w": 1.0}
+    ],
+    "FTSE 100": [
+      {"name": "AstraZeneca", "id": "AZN.L", "id_type": "RIC", "ccy": "USD", "w": 8.0},
+      {"name": "Shell", "id": "SHEL.L", "id_type": "RIC", "ccy": "USD", "w": 8.0},
+      {"name": "HSBC", "id": "HSBA.L", "id_type": "RIC", "ccy": "USD", "w": 7.5},
+      {"name": "Unilever", "id": "ULVR.L", "id_type": "RIC", "ccy": "EUR", "w": 5.0},
+      {"name": "British American Tobacco", "id": "BATS.L", "id_type": "RIC", "ccy": "GBP", "w": 3.5},
+      {"name": "Rio Tinto", "id": "RIO.L", "id_type": "RIC", "ccy": "USD", "w": 3.0},
+      {"name": "GSK", "id": "GSK.L", "id_type": "RIC", "ccy": "GBP", "w": 3.0},
+      {"name": "RELX", "id": "REL.L", "id_type": "RIC", "ccy": "GBP", "w": 3.0},
+      {"name": "BP", "id": "BP.L", "id_type": "RIC", "ccy": "USD", "w": 3.0},
+      {"name": "Barclays", "id": "BARC.L", "id_type": "RIC", "ccy": "GBP", "w": 2.5},
+      {"name": "LSEG", "id": "LSEG.L", "id_type": "RIC", "ccy": "GBP", "w": 2.5},
+      {"name": "Diageo", "id": "DGE.L", "id_type": "RIC", "ccy": "USD", "w": 2.0}
+    ],
+    "DAX": [
+      {"name": "SAP", "id": "SAPG.DE", "id_type": "RIC", "ccy": "EUR", "w": 13.0},
+      {"name": "Siemens", "id": "SIE", "id_type": "Ticker", "ccy": "EUR", "w": 10.0},
+      {"name": "Allianz", "id": "ALVG.DE", "id_type": "RIC", "ccy": "EUR", "w": 8.0},
+      {"name": "Airbus", "id": "AIR.PA", "id_type": "RIC", "ccy": "EUR", "w": 6.0},
+      {"name": "Rheinmetall", "id": "RHMG.DE", "id_type": "RIC", "ccy": "EUR", "w": 4.0}
+    ],
+    "Japan": [
+      {"name": "Toyota", "id": "7203.T", "id_type": "RIC", "ccy": "JPY", "w": 4.0},
+      {"name": "MUFG", "id": "8306.T", "id_type": "RIC", "ccy": "JPY", "w": 3.5},
+      {"name": "Sony", "id": "6758.T", "id_type": "RIC", "ccy": "JPY", "w": 3.0},
+      {"name": "Hitachi", "id": "6501.T", "id_type": "RIC", "ccy": "JPY", "w": 3.0},
+      {"name": "Tokyo Electron", "id": "8035.T", "id_type": "RIC", "ccy": "JPY", "w": 2.0},
+      {"name": "Fast Retailing", "id": "9983.T", "id_type": "RIC", "ccy": "JPY", "w": 1.5},
+      {"name": "Keyence", "id": "6861.T", "id_type": "RIC", "ccy": "JPY", "w": 1.5},
+      {"name": "SMFG", "id": "8316.T", "id_type": "RIC", "ccy": "JPY", "w": 2.0},
+      {"name": "Mitsubishi Corp", "id": "8058.T", "id_type": "RIC", "ccy": "JPY", "w": 1.5},
+      {"name": "Recruit", "id": "6098.T", "id_type": "RIC", "ccy": "JPY", "w": 1.5},
+      {"name": "Nintendo", "id": "7974.T", "id_type": "RIC", "ccy": "JPY", "w": 1.3},
+      {"name": "Advantest", "id": "6857.T", "id_type": "RIC", "ccy": "JPY", "w": 1.5}
+    ],
+    "Hang Seng": [
+      {"name": "Tencent", "id": "0700.HK", "id_type": "RIC", "ccy": "CNY", "w": 10.0},
+      {"name": "HSBC", "id": "0005.HK", "id_type": "RIC", "ccy": "USD", "w": 8.0},
+      {"name": "Xiaomi", "id": "1810.HK", "id_type": "RIC", "ccy": "CNY", "w": 5.0},
+      {"name": "Meituan", "id": "3690.HK", "id_type": "RIC", "ccy": "CNY", "w": 4.0},
+      {"name": "CCB", "id": "0939.HK", "id_type": "RIC", "ccy": "CNY", "w": 4.0},
+      {"name": "AIA", "id": "1299.HK", "id_type": "RIC", "ccy": "USD", "w": 4.0},
+      {"name": "HKEX", "id": "0388.HK", "id_type": "RIC", "ccy": "HKD", "w": 3.0},
+      {"name": "ICBC", "id": "1398.HK", "id_type": "RIC", "ccy": "CNY", "w": 3.0},
+      {"name": "JD.com", "id": "9618.HK", "id_type": "RIC", "ccy": "CNY", "w": 2.0},
+      {"name": "BYD", "id": "1211.HK", "id_type": "RIC", "ccy": "CNY", "w": 2.0}
+    ],
+    "Hong Kong": [
+      {"name": "AIA", "id": "1299.HK", "id_type": "RIC", "ccy": "USD", "w": 20.0},
+      {"name": "HKEX", "id": "0388.HK", "id_type": "RIC", "ccy": "HKD", "w": 13.0},
+      {"name": "HSBC (HK line)", "id": "0005.HK", "id_type": "RIC", "ccy": "USD", "w": 10.0},
+      {"name": "Techtronic", "id": "0669.HK", "id_type": "RIC", "ccy": "USD", "w": 5.0},
+      {"name": "Sun Hung Kai Props", "id": "0016.HK", "id_type": "RIC", "ccy": "HKD", "w": 4.0}
+    ],
+    "CSI 300": [
+      {"name": "Kweichow Moutai", "id": "600519.SS", "id_type": "RIC", "ccy": "CNY", "w": 5.0},
+      {"name": "CATL", "id": "300750.SZ", "id_type": "RIC", "ccy": "CNY", "w": 3.5},
+      {"name": "China Merchants Bank", "id": "600036.SS", "id_type": "RIC", "ccy": "CNY", "w": 2.5},
+      {"name": "Ping An", "id": "601318.SS", "id_type": "RIC", "ccy": "CNY", "w": 2.5},
+      {"name": "ICBC", "id": "601398.SS", "id_type": "RIC", "ccy": "CNY", "w": 1.5},
+      {"name": "BYD", "id": "002594.SZ", "id_type": "RIC", "ccy": "CNY", "w": 1.5},
+      {"name": "Midea", "id": "000333.SZ", "id_type": "RIC", "ccy": "CNY", "w": 1.5},
+      {"name": "Zijin Mining", "id": "601899.SS", "id_type": "RIC", "ccy": "CNY", "w": 1.5}
+    ],
+    "Korea": [
+      {"name": "Samsung Electronics", "id": "005930.KS", "id_type": "RIC", "ccy": "KRW", "w": 25.0},
+      {"name": "SK Hynix", "id": "000660.KS", "id_type": "RIC", "ccy": "KRW", "w": 12.0},
+      {"name": "Hyundai Motor", "id": "005380.KS", "id_type": "RIC", "ccy": "KRW", "w": 2.5},
+      {"name": "KB Financial", "id": "105560.KS", "id_type": "RIC", "ccy": "KRW", "w": 2.0},
+      {"name": "Celltrion", "id": "068270.KS", "id_type": "RIC", "ccy": "KRW", "w": 2.0},
+      {"name": "Kia", "id": "000270.KS", "id_type": "RIC", "ccy": "KRW", "w": 1.8}
+    ],
+    "Nifty 50": [
+      {"name": "HDFC Bank", "id": "HDBK.NS", "id_type": "RIC", "ccy": "INR", "w": 13.0},
+      {"name": "ICICI Bank", "id": "ICBK.NS", "id_type": "RIC", "ccy": "INR", "w": 9.0},
+      {"name": "Infosys", "id": "INFY.NS", "id_type": "RIC", "ccy": "INR", "w": 5.0},
+      {"name": "Bharti Airtel", "id": "BRTI.NS", "id_type": "RIC", "ccy": "INR", "w": 4.5},
+      {"name": "TCS", "id": "TCS.NS", "id_type": "RIC", "ccy": "INR", "w": 3.5},
+      {"name": "Larsen & Toubro", "id": "LART.NS", "id_type": "RIC", "ccy": "INR", "w": 4.0},
+      {"name": "ITC", "id": "ITC.NS", "id_type": "RIC", "ccy": "INR", "w": 3.5},
+      {"name": "Axis Bank", "id": "AXBK.NS", "id_type": "RIC", "ccy": "INR", "w": 3.0},
+      {"name": "Reliance (check: EPS series anomalous in Nov 2026)", "id": "RELI.NS", "id_type": "RIC", "ccy": "INR", "w": 9.0}
+    ],
+    "MSCI EM": [
+      {"name": "TSMC", "id": "2330.TW", "id_type": "RIC", "ccy": "TWD", "w": 11.0},
+      {"name": "Tencent", "id": "0700.HK", "id_type": "RIC", "ccy": "CNY", "w": 5.0},
+      {"name": "Samsung Electronics", "id": "005930.KS", "id_type": "RIC", "ccy": "KRW", "w": 4.0},
+      {"name": "SK Hynix", "id": "000660.KS", "id_type": "RIC", "ccy": "KRW", "w": 2.0},
+      {"name": "HDFC Bank", "id": "HDBK.NS", "id_type": "RIC", "ccy": "INR", "w": 1.5},
+      {"name": "Xiaomi", "id": "1810.HK", "id_type": "RIC", "ccy": "CNY", "w": 1.3},
+      {"name": "Meituan", "id": "3690.HK", "id_type": "RIC", "ccy": "CNY", "w": 1.0},
+      {"name": "ICICI Bank", "id": "ICBK.NS", "id_type": "RIC", "ccy": "INR", "w": 1.0},
+      {"name": "CCB", "id": "0939.HK", "id_type": "RIC", "ccy": "CNY", "w": 1.0}
+    ],
+    "US Info Tech": [
+      {"name": "NVIDIA", "id": "NVDA", "id_type": "Ticker", "ccy": "USD", "w": 24.0},
+      {"name": "Microsoft", "id": "MSFT", "id_type": "Ticker", "ccy": "USD", "w": 20.0},
+      {"name": "Apple", "id": "AAPL", "id_type": "Ticker", "ccy": "USD", "w": 20.0},
+      {"name": "Broadcom", "id": "AVGO", "id_type": "Ticker", "ccy": "USD", "w": 9.0},
+      {"name": "Oracle", "id": "ORCL", "id_type": "Ticker", "ccy": "USD", "w": 2.5}
+    ],
+    "US Comm Svcs": [
+      {"name": "Alphabet", "id": "GOOGL", "id_type": "Ticker", "ccy": "USD", "w": 40.0},
+      {"name": "Meta", "id": "META", "id_type": "Ticker", "ccy": "USD", "w": 30.0},
+      {"name": "Netflix", "id": "NFLX", "id_type": "Ticker", "ccy": "USD", "w": 8.0},
+      {"name": "T-Mobile US", "id": "TMUS", "id_type": "Ticker", "ccy": "USD", "w": 3.0},
+      {"name": "Disney", "id": "DIS", "id_type": "Ticker", "ccy": "USD", "w": 3.0}
+    ],
+    "US Cons Disc": [
+      {"name": "Amazon", "id": "AMZN", "id_type": "Ticker", "ccy": "USD", "w": 38.0},
+      {"name": "Tesla", "id": "TSLA", "id_type": "Ticker", "ccy": "USD", "w": 18.0},
+      {"name": "Home Depot", "id": "HD", "id_type": "Ticker", "ccy": "USD", "w": 6.0},
+      {"name": "McDonald's", "id": "MCD", "id_type": "Ticker", "ccy": "USD", "w": 3.5},
+      {"name": "Booking", "id": "BKNG", "id_type": "Ticker", "ccy": "USD", "w": 3.0}
+    ],
+    "US Financials": [
+      {"name": "Berkshire", "id": "BRK.B", "id_type": "Ticker", "ccy": "USD", "w": 12.0},
+      {"name": "JPMorgan", "id": "JPM", "id_type": "Ticker", "ccy": "USD", "w": 11.0},
+      {"name": "Visa", "id": "V", "id_type": "Ticker", "ccy": "USD", "w": 8.0},
+      {"name": "Mastercard", "id": "MA", "id_type": "Ticker", "ccy": "USD", "w": 6.5},
+      {"name": "Bank of America", "id": "BAC", "id_type": "Ticker", "ccy": "USD", "w": 4.0},
+      {"name": "Goldman Sachs", "id": "GS", "id_type": "Ticker", "ccy": "USD", "w": 2.5}
+    ],
+    "US Health Care": [
+      {"name": "Eli Lilly", "id": "LLY", "id_type": "Ticker", "ccy": "USD", "w": 14.0},
+      {"name": "Johnson & Johnson", "id": "JNJ", "id_type": "Ticker", "ccy": "USD", "w": 8.0},
+      {"name": "AbbVie", "id": "ABBV", "id_type": "Ticker", "ccy": "USD", "w": 7.0},
+      {"name": "UnitedHealth", "id": "UNH", "id_type": "Ticker", "ccy": "USD", "w": 6.0},
+      {"name": "Merck", "id": "MRK", "id_type": "Ticker", "ccy": "USD", "w": 4.0},
+      {"name": "Abbott", "id": "ABT", "id_type": "Ticker", "ccy": "USD", "w": 4.0}
+    ],
+    "US Industrials": [
+      {"name": "GE Aerospace", "id": "GE", "id_type": "Ticker", "ccy": "USD", "w": 6.0},
+      {"name": "Caterpillar", "id": "CAT", "id_type": "Ticker", "ccy": "USD", "w": 4.5},
+      {"name": "RTX", "id": "RTX", "id_type": "Ticker", "ccy": "USD", "w": 4.0},
+      {"name": "Uber", "id": "UBER", "id_type": "Ticker", "ccy": "USD", "w": 3.5},
+      {"name": "GE Vernova", "id": "GEV", "id_type": "Ticker", "ccy": "USD", "w": 3.5},
+      {"name": "Honeywell", "id": "HON", "id_type": "Ticker", "ccy": "USD", "w": 3.0}
+    ],
+    "US Cons Staples": [
+      {"name": "Walmart", "id": "WMT", "id_type": "Ticker", "ccy": "USD", "w": 15.0},
+      {"name": "Costco", "id": "COST", "id_type": "Ticker", "ccy": "USD", "w": 13.0},
+      {"name": "Procter & Gamble", "id": "PG", "id_type": "Ticker", "ccy": "USD", "w": 11.0},
+      {"name": "Coca-Cola", "id": "KO", "id_type": "Ticker", "ccy": "USD", "w": 8.0},
+      {"name": "PepsiCo", "id": "PEP", "id_type": "Ticker", "ccy": "USD", "w": 6.0},
+      {"name": "Philip Morris", "id": "PM", "id_type": "Ticker", "ccy": "USD", "w": 6.0}
+    ],
+    "US Energy": [
+      {"name": "Exxon", "id": "XOM", "id_type": "Ticker", "ccy": "USD", "w": 23.0},
+      {"name": "Chevron", "id": "CVX", "id_type": "Ticker", "ccy": "USD", "w": 15.0},
+      {"name": "ConocoPhillips", "id": "COP", "id_type": "Ticker", "ccy": "USD", "w": 6.0},
+      {"name": "EOG", "id": "EOG", "id_type": "Ticker", "ccy": "USD", "w": 3.5},
+      {"name": "Williams", "id": "WMB", "id_type": "Ticker", "ccy": "USD", "w": 3.5}
+    ],
+    "US Utilities": [
+      {"name": "NextEra", "id": "NEE", "id_type": "Ticker", "ccy": "USD", "w": 11.0},
+      {"name": "Southern", "id": "SO", "id_type": "Ticker", "ccy": "USD", "w": 7.0},
+      {"name": "Duke", "id": "DUK", "id_type": "Ticker", "ccy": "USD", "w": 6.5},
+      {"name": "Constellation Energy", "id": "CEG", "id_type": "Ticker", "ccy": "USD", "w": 6.0},
+      {"name": "Vistra", "id": "VST", "id_type": "Ticker", "ccy": "USD", "w": 4.0}
+    ],
+    "US Real Estate": [
+      {"name": "Prologis", "id": "PLD", "id_type": "Ticker", "ccy": "USD", "w": 9.0, "measure": "Ffops"},
+      {"name": "Welltower", "id": "WELL", "id_type": "Ticker", "ccy": "USD", "w": 9.0, "measure": "Ffops"},
+      {"name": "American Tower", "id": "AMT", "id_type": "Ticker", "ccy": "USD", "w": 7.5, "measure": "Ffops"},
+      {"name": "Equinix", "id": "EQIX", "id_type": "Ticker", "ccy": "USD", "w": 6.5, "measure": "Ffops"},
+      {"name": "Simon Property", "id": "SPG", "id_type": "Ticker", "ccy": "USD", "w": 4.5, "measure": "Ffops"}
+    ],
+    "US Materials": [
+      {"name": "Linde", "id": "LIN", "id_type": "Ticker", "ccy": "USD", "w": 17.0},
+      {"name": "Sherwin-Williams", "id": "SHW", "id_type": "Ticker", "ccy": "USD", "w": 7.0},
+      {"name": "Freeport-McMoRan", "id": "FCX", "id_type": "Ticker", "ccy": "USD", "w": 6.0},
+      {"name": "Newmont", "id": "NEM", "id_type": "Ticker", "ccy": "USD", "w": 6.0},
+      {"name": "Ecolab", "id": "ECL", "id_type": "Ticker", "ccy": "USD", "w": 5.0}
+    ]
+  }
+}
