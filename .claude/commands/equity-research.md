@@ -1,7 +1,7 @@
 ---
 description: Equity research report on a stock, using LSEG data for prices, fundamentals and consensus
 argument-hint: <TICKER or company name> [--detailed]
-allowed-tools: mcp__LSEG__entity_search, mcp__LSEG__symbology_lookup, mcp__LSEG__historical_pricing_summaries, mcp__LSEG__qa_company_fundamentals, mcp__LSEG__qa_ibes_consensus, mcp__LSEG__qa_macroeconomic, WebSearch, WebFetch
+allowed-tools: mcp__LSEG__entity_search, mcp__LSEG__symbology_lookup, mcp__LSEG__historical_pricing_summaries, mcp__LSEG__qa_company_fundamentals, mcp__LSEG__qa_ibes_consensus, mcp__LSEG__qa_macroeconomic, WebSearch, WebFetch, Write, Bash(python3 tools/ta_indicators.py:*)
 ---
 
 <!-- Report layout inspired by quant-sentiment-ai/claude-equity-research (MIT). Data steps rewritten for the LSEG MCP. -->
@@ -12,11 +12,11 @@ All numbers must come from LSEG tool results. Use WebSearch only for news, catal
 
 ## Step 1: Resolve the security
 - If given a company name, or a ticker you are unsure of, call `mcp__LSEG__entity_search` (entityType `organisation`) to get the PrimaryRIC and confirm it is a Public Company.
-- Keep both the RIC (e.g. `AAPL.O`) and the plain ticker (e.g. `AAPL`). Fundamentals accept either; IBES takes the ticker.
+- Keep both the RIC (e.g. `AAPL.O`) and the plain ticker (e.g. `AAPL`). Use the RIC for pricing. Use the plain ticker with `type: "Ticker"` for `qa_company_fundamentals` and `tickerType: "Ticker"` for IBES. Fundamentals lookups by RIC fail for many companies.
 
 ## Step 2: Pull data (run independent calls in parallel)
-1. **Price history**: `mcp__LSEG__historical_pricing_summaries` with the RIC, interval `P1D`, tenor `1Y`. From it compute: last close, 52-week high/low, 1M / 3M / 12M return, 50- and 200-day SMA, 14-day RSI, and average 20-day volume vs 3-month average volume. Do the arithmetic carefully and show the inputs.
-2. **Benchmark**: the same call for `.SPX` (or the stock's home index) over `1Y`, for relative strength.
+1. **Price history**: `mcp__LSEG__historical_pricing_summaries` with the RIC, interval `P1D`, tenor `1Y`. Never compute indicators by hand. Save the response's `headers` and `data` arrays to a JSON file in the scratchpad directory, as `{"headers": [...], "data": [...]}`, then run `python3 tools/ta_indicators.py <file> --benchmark-return <benchmark 12M %>`. It prints the last close, 52-week high/low, 1M / 3M / 12M returns, SMA50 / SMA200, 14-day RSI, 20-day vs 3-month volume, the trend and relative strength. Use its output as is.
+2. **Benchmark**: `.SPX` (or the stock's home index), interval `P1M`, tenor `13M`. Its 12M return is the last close ÷ the close 12 months earlier − 1. Pass that to the script as `--benchmark-return`.
 3. **Reported fundamentals**: `mcp__LSEG__qa_company_fundamentals`, freq `A`, the last 3 fiscal years (revenue, gross income, EPS, DPS), plus freq `C`, year `0` for the current P/E and trailing DPS.
 4. **Consensus**: `mcp__LSEG__qa_ibes_consensus` with measures `Eps`, `Rev`, `Dps`, periodIndexStart `1`, periodIndexEnd `3`. Also `qa_ibes_actuals` with pIndex `0`, quarterly, to compare the last report with expectations.
 5. **Peers**: pick 3-4 close competitors and pull their current P/E (freq `C`) and next-year consensus EPS.
