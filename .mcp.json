@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "chinatravelchina": {
+      "type": "http",
+      "url": "https://chinatravelchina.com/mcp"
+    }
+  }
+}
